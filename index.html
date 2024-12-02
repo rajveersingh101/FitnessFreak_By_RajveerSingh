@@ -24,6 +24,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F6ZT4XX"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+ <script> function get_ga_clientid() {
+  var cookie = {};
+  document.cookie.split(';').forEach(function(el) {
+    var splitCookie = el.split('=');
+    var key = splitCookie[0].trim();
+    var value = splitCookie[1];
+    cookie[key] = value;
+  });
+return cookie["_ga"].substring(6);
+}
+ </script>
 
     <!----------------------------------------------------------NAVIGATION----------------------------------------------------->
 
